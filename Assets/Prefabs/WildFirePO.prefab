@@ -4745,8 +4745,9 @@ GameObject:
   - component: {fileID: 4288416149911810}
   - component: {fileID: 198679442476388764}
   - component: {fileID: 199266017805695016}
+  - component: {fileID: 4237112045885406064}
   m_Layer: 0
-  m_Name: WildFire
+  m_Name: WildFirePO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9561,6 +9562,27 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &4237112045885406064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956197547661106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d9c4d6f4f4909345a6e5bf4415025a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentIntensity: 1
+  regenDelay: 2.5
+  regenRate: 0.1
+  fireParticleSystems:
+  - {fileID: 198679442476388764}
+  - {fileID: 198056694026403006}
+  - {fileID: 198266200310702596}
+  - {fileID: 4058662963277818754}
+  isLit: 1
 --- !u!1 &1982324152055030
 GameObject:
   m_ObjectHideFlags: 0
@@ -14469,6 +14491,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73767e07adddc394d82b994801f89bbb, type: 3}
+--- !u!198 &4058662963277818754 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198791558892717060, guid: 73767e07adddc394d82b994801f89bbb,
+    type: 3}
+  m_PrefabInstance: {fileID: 4220290289472958342}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4215790407853489410 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4508696319873668, guid: 73767e07adddc394d82b994801f89bbb,

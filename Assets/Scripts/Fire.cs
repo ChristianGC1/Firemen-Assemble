@@ -60,4 +60,8 @@ public class Fire : MonoBehaviour
             emission.rateOverTime = currentIntensity * startIntensities[i];
         }
     }
+
+    // TODO asdfasfas Debuglog each time a fire is put out entirely. Add 1 to a score whenever a fire gets put out, when fire gets put out it adds 1 to score.
+    // Use event system to tell when a fire has been put out, score manager hears the event, and adds score.
+    // If score reaches a certain number, a win screen pops out.
 }

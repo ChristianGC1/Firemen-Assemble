@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    float rotationX;
-    float mouseSens = 160f;
+    float pitch;
+    float yaw;
+    float mouseSensitivity = 160f;
 
     public Transform player;
 
@@ -18,13 +19,14 @@ public class CameraMove : MonoBehaviour
 
     void Update()
     {
-        float mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * mouseSens;
-        float m_X = Input.GetAxis("Mouse X") * Time.deltaTime * mouseSens;
+        float mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * mouseSensitivity;
+        float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * mouseSensitivity;
 
-        rotationX -= mouseY;
-        rotationX = Mathf.Clamp(rotationX, -90f, 90f);
-        transform.localEulerAngles = new Vector3(rotationX, 0f, 0f);
+        pitch -= mouseY;
+        pitch = Mathf.Clamp(pitch, -90f, 90f);
+        yaw += mouseX;
+        transform.localEulerAngles = new Vector3(pitch, yaw, 0f);
 
-        player.Rotate(Vector3.up * m_X);
+        //player.Rotate(Vector3.up * mouseX);
     }
 }
