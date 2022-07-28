@@ -45,7 +45,10 @@ public class Fire : MonoBehaviour
 
         if (currentIntensity <= 0)
         {
+            Score.score++;
+            Debug.Log("Added 1 point!");
             isLit = false;
+            Destroy(gameObject);
             return true;
         }
 

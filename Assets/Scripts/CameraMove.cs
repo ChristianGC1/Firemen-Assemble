@@ -14,7 +14,6 @@ public class CameraMove : MonoBehaviour
     {
         //Hide Mouse Cursor
         Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
