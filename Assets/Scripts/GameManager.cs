@@ -29,6 +29,10 @@ public class GameManager : MonoBehaviour
             Cursor.visible = true;
             GameWin();
         }
+        //if (fire[] = 0)
+        //{
+
+        //}
     }
 
     public void GameWin()
